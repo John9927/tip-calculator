@@ -1,0 +1,152 @@
+.container__main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: hsl(185, 41%, 84%);
+}
+
+.container__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 130px auto 70px auto;
+  text-align: justify;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 22px;
+  max-width: 80px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: hsl(183, 100%, 15%);
+  line-height: 1.3;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.--spacing {
+  letter-spacing: 6px;
+}
+
+/* Card */
+.container__card {
+  display: flex;
+  width: 100%;
+  height: 380px;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  width: 710px;
+  height: 100%;
+  margin: 0 auto;
+  border: 30px solid white;
+  border-top: 20px solid white;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 8px 23px 0px rgb(0 0 0 / 29%);
+}
+
+.container__items {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 100px 100px 100px;
+  gap: 10px;
+}
+
+.container__input__bill,
+.container__select__tip {
+  position: relative;
+  display: flex;
+  width: 340px;
+  height: 100%;
+  flex-direction: column;
+}
+
+.label__item {
+  letter-spacing: 1.1px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: hsl(183, 100%, 15%);
+}
+
+input {
+  direction: rtl;
+  border: 0;
+  padding-right: 30px;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 19px;
+  background: hsl(185, 41%, 84%);
+  margin-bottom: 17px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container__image {
+  position: absolute;
+  top: 40px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.fa-dollar-sign {
+  color: hsl(185, 41%, 70%);
+}
+
+.container__mini__card {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.container__percent {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 8px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.container__custom {
+  background-color: hsl(185, 41%, 97%);
+  border-radius: 8px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  color: hsl(186, 14%, 43%);
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.container__user___img {
+  position: absolute;
+  bottom: 35px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.--margin {
+  margin-top: 25px;
+}
+
+.fa-user {
+  color: hsl(185, 41%, 70%);
+}
