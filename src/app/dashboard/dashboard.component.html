@@ -12,7 +12,7 @@
         <!-- Label Bill -->
         <span class="label__item">Bill</span>
         <!-- Input  -->
-        <input type="text" placeholder="0">
+        <input type="text" placeholder="0" class="input">
         <div class="container__image">
           <i class="fas fa-dollar-sign"></i>
         </div>
@@ -44,24 +44,54 @@
 
             <!-- Custom -->
             <div class="container__mini__card">
-              <span class="container__custom">Custom</span>
+              <span class="container__custom">
+                <input type="text" class="custom" placeholder="Custom">
+              </span>
+
             </div>
           </div>
 
           <!-- Number of People -->
-          <!-- <div class="container__people"> -->
-            <span class="label__item --margin">Number of People</span>
-            <!-- Input  -->
-            <input type="text" placeholder="0">
-            <div class="container__user___img">
-              <i class="fas fa-user"></i>
-            </div>
-          <!-- </div> -->
+          <span class="label__item --margin">Number of People</span>
+          <!-- Input  -->
+          <input class="input" type="text" placeholder="0">
+          <div class="container__user___img">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Right -->
+      <div class="container__display">
+        <!-- Tip amount -->
+        <div class="item">
+          <div class="container__tip">
+            <span class="label__tip">Tip amount</span>
+            <span class="label__person">/ person</span>
+          </div>
+          <span class="display">
+            ${{money}}
+          </span>
+        </div>
+
+        <!-- Total -->
+        <div class="item --marginTip">
+          <div class="container__tip">
+            <span class="label__tip">Total</span>
+            <span class="label__person">/ person</span>
+          </div>
+          <span class="display">
+            ${{moneyPerson}}
+          </span>
+        </div>
+
+        <!-- Button -->
+        <div class="container__reset">
+          <div class="reset">
+            <span class="label__reset">Reset</span>
+          </div>
         </div>
 
       </div>
-      <!-- Right -->
-
     </div>
   </div>
 </div>

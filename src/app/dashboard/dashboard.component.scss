@@ -40,6 +40,7 @@
 
 .card {
   display: flex;
+  justify-content: space-between;
   width: 710px;
   height: 100%;
   margin: 0 auto;
@@ -74,7 +75,7 @@
   color: hsl(183, 100%, 15%);
 }
 
-input {
+.input {
   direction: rtl;
   border: 0;
   padding-right: 30px;
@@ -85,13 +86,13 @@ input {
   margin-bottom: 17px;
 }
 
-input:focus {
+.input:focus {
   outline: none;
 }
 
 .container__image {
   position: absolute;
-  top: 40px;
+  top: 41px;
   left: 8px;
   width: 24px;
   height: 24px;
@@ -107,6 +108,11 @@ input:focus {
   width: 100px;
   height: 45px;
   cursor: pointer;
+}
+
+.container__percent:hover {
+  background: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
 }
 
 .container__percent {
@@ -135,9 +141,15 @@ input:focus {
   align-items: center;
 }
 
+.container__custom:hover {
+  border: 2px solid hsl(183, 100%, 15%);
+  border-radius: 8px;
+}
+
+
 .container__user___img {
   position: absolute;
-  bottom: 35px;
+  bottom: 32px;
   left: 8px;
   width: 24px;
   height: 24px;
@@ -149,4 +161,98 @@ input:focus {
 
 .fa-user {
   color: hsl(185, 41%, 70%);
+}
+
+/* Right */
+.container__display {
+  width: 340px;
+  height: 100%;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container__tip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.label__tip {
+  color: white;
+  font-size: 18px;
+}
+
+.label__person {
+  color: hsl(186, 14%, 43%);
+  font-size: 15px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 40px;
+  margin: 30px auto;
+  align-content: center;
+}
+
+.display {
+  display: flex;
+  font-size: 39px;
+  font-weight: bold;
+  color: hsl(172, 67%, 45%);
+}
+
+.--marginTip {
+  margin-top: -30px !important;
+}
+
+/* Reset */
+.container__reset {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.reset {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  background-color: hsl(172, 67%, 45%);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background: hsl(185, 41%, 84%);
+}
+
+.label__reset {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: hsl(183, 100%, 15%);
+  text-transform: uppercase;
+}
+
+.custom {
+  display: flex;
+  direction: rtl;
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  background-color: hsl(185, 41%, 97%);
+
+  &:focus {
+    outline: none;
+  }
 }
